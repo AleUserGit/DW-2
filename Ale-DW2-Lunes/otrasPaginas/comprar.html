@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar</title>
+    <link rel="stylesheet" href="/css/general.css">
+</head>
+<body>
+<nav>
+    <a href="/index.html">Inicio</a> <a href="/otrasPaginas/productos.html">Ver productos</a> <a href="/otrasPaginas/comprar.html">Comprar</a>
+</nav>
+<h1>TechNova</h1>
+<h3>Esperamos haya tenido una buena experiencia</h3>
+
+<p>Si tuvo algún problema considere escribirnos a:</p>
+<ul>
+    <li>technovaconsultas@gmail.com</li>
+    <li>+54 11 2368 4412</li>
+    <script>
+        const precios = {
+    "BMW": 25000000,
+    "Samsung": 1100000,
+    "Heladera": 1900000,
+    "Fiat": 24000000,
+    "Lavarropas": 1500000
+};
+
+let cantidadBMW = prompt("¿Cuántos BMW X2 deseas comprar?", "0");
+let cantidadSamsung = prompt("¿Cuántos Samsung S23 Ultra deseas comprar?", "0");
+let cantidadHeladera = prompt("¿Cuántas Heladeras LG deseas comprar?", "0");
+let cantidadFiat = prompt("¿Cuántos Fiat Cronos deseas comprar?", "0");
+let cantidadLavarropas = prompt("¿Cuántos Lavarropas deseas comprar?", "0");
+
+
+let total = (cantidadBMW * precios["BMW"]) +
+            (cantidadSamsung * precios["Samsung"]) +
+            (cantidadHeladera * precios["Heladera"]) +
+            (cantidadFiat * precios["Fiat"]) +
+            (cantidadLavarropas * precios["Lavarropas"]);
+
+alert("su compra es un total de $" + total)
+console.log("Valor total de la compra: $" + total);
+alert("Su compra fue exitosa!");
+
+</script>
+
+</ul>
+</body>
+</html>
